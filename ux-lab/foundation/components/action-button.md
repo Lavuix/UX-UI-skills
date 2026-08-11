@@ -3,6 +3,8 @@
 | Поле | Значение |
 |------|----------|
 | Статус | ✅ готов |
+| Сверка | ✔ сверено с Figma (node `5:2`) |
+| Уровень | атом |
 | Источник | Figma · Life-20_Kit_Light · страница «Action Button» |
 | fileKey | `M03BFuFuarl4z15GXCFnxh` (node `5:2`) |
 | Ссылка | https://www.figma.com/design/M03BFuFuarl4z15GXCFnxh/Life-20_Kit_Light |
