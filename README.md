@@ -8,6 +8,8 @@ Hypothesis-driven design как повторяемый процесс: кажд�
 
 ## Что где
 
+- **[`CLAUDE.md`](CLAUDE.md)** — инструкция для CLI-агента: как работать с китом и
+  когда подсказывать, что зафиксировать (Claude Code читает её автоматически).
 - **[`RUNNING.md`](RUNNING.md)** — как запустить оркестр из CLI (macOS/Linux + Windows).
 - **[`VERSION`](VERSION)** + **[`CHANGELOG.md`](CHANGELOG.md)** — версионирование кита (SemVer).
 - **`ux-lab/`** — ядро процесса:
@@ -25,3 +27,25 @@ Hypothesis-driven design как повторяемый процесс: кажд�
 2. Свериться с `ux-lab/rules/README.md` — чеклист Definition of Done.
 3. Завести гипотезу из `ux-lab/templates/hypothesis.md`, оформить спеку в `specs/`.
 4. Запустить оркестр по `RUNNING.md`: `orchestra` → `claude` → `/start` → `/feature`.
+
+## Как пополнять и версионировать
+
+Кит живёт за счёт того, что тяжело давшиеся уроки в него **возвращаются**. Порядок
+(подробно — в [`CLAUDE.md`](CLAUDE.md)):
+
+1. **Долго с чем-то возились / нашли неочевидное решение** → запиши паттерн:
+   скопируй `ux-lab/best-practices/patterns/_TEMPLATE.md`, заполни, добавь строку в
+   `ux-lab/best-practices/INDEX.md`. Уровень уверенности не завышай: пока это вывод
+   из работы, а не A/B — ставь ⚪ допущение или 🟡 тесты.
+2. **Любое изменение `ux-lab/` или `specs/`** → пункт в `CHANGELOG.md` + поднятая
+   версия в `VERSION` по SemVer (MAJOR ломает, MINOR добавляет, PATCH правит).
+3. Зафиксируй:
+   ```bash
+   git add -A && git commit -m "..." && git tag vX.Y.Z && git push && git push --tags
+   ```
+
+Claude Code при работе в этом репо читает `CLAUDE.md` и сам подсказывает шаги 1–2.
+
+## Лицензия
+
+[MIT](LICENSE) © Lavuix.
