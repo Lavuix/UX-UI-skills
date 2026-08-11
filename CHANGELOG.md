@@ -28,6 +28,27 @@
 
 _Ничего пока._
 
+## [1.13.0] — 2026-08-11
+
+### Added
+- `playbook/5-designing.md`: раздел «Аннотируй варианты и корнер-кейсы» — правило
+  сборки макетов: у каждого варианта/edge-кейса на странице рядом (не оборачивая)
+  ставим аннотацию — светло-жёлтый auto-layout блок с заголовком и пояснением
+  «для чего и когда применять».
+- Definition of Done (`rules/README.md`): чек-пункт про аннотации вариантов/
+  корнер-кейсов в разделе «Консистентность».
+
+## [1.12.0] — 2026-08-11
+
+### Added
+- `best-practices/patterns/confirm-popup-composition.md` — паттерн сборки Confirm
+  из готовых организмов (Popup/Bottomsheet + Floating Button + Action Button),
+  размеры Desktop 520/722/900, слот под кастомный контент, empty state без кнопок.
+- `best-practices/patterns/confirm-destructive-action.md` — паттерн стиля кнопок
+  для удаления/деструктивных действий: позиции фиксированы, меняется Type
+  (Primary/Secondary), а не расположение кнопок.
+- Обе записи добавлены в `best-practices/INDEX.md`.
+
 ## [1.11.1] — 2026-08-11
 
 ### Changed
