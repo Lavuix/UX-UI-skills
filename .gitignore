@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# редакторы
+.vscode/
+.idea/
+*.swp
+
+# артефакты, которые генерирует оркестр в проекте-потребителе (не в самом ките)
+/.claude/
+/brain/
+/PROJECT.md
+/CHANGELOG-DESIGN.md
+
+# архивы сборок
+*.zip
