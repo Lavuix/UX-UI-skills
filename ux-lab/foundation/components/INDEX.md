@@ -22,7 +22,7 @@
 | Empty Content / 404 | организм | ✅ | ✔ | [`empty-content-404.md`](empty-content-404.md) |
 | Hint 2.0 | молекула | ✅ | ✔ | [`hint-2-0.md`](hint-2-0.md) |
 | Input | молекула | ✅ | ✔ | [`input.md`](input.md) |
-| Sidebar 3.0 | организм | ✅ | ⚠ | _описать_ |
+| Sidebar 3.0 | организм | ✅ | ✔ | [`sidebar-3-0.md`](sidebar-3-0.md) |
 | Confirm | — | In progress | — | пропуск |
 | InputNumber (Stepper) | — | In progress | — | пропуск |
 | FormsCard | — | In progress | — | пропуск |
@@ -38,16 +38,16 @@
 | Toolbar | организм | ? | ✔ | [`toolbar.md`](toolbar.md) |
 | Header | организм | ? | ✔ | [`header.md`](header.md) |
 | SnackBar | молекула | ? | ✔ | [`snack-bar.md`](snack-bar.md) |
-| Popup | организм | ? | ⚠ | _описать_ |
-| Bottomsheet | организм | ? | ⚠ | _описать_ |
-| Floating Button | организм | ? | ⚠ | _описать_ |
-| Skeletons | атом | ? | ⚠ | _описать_ |
-| System | организм | ? | ⚠ | _описать_ |
-| Mail | организм | ? | ⚠ | _описать_ |
-| Tabs | молекула | ? | ⚠ | _описать_ |
-| Tag | атом | ? | ⚠ | _описать_ |
-| TextArea | молекула | ? | ⚠ | _описать_ |
-| Userpic | атом | ? | ⚠ | _описать_ |
+| Popup | организм | ? | ✔ | [`popup.md`](popup.md) |
+| Bottomsheet | организм | ? | ✔ | [`bottomsheet.md`](bottomsheet.md) |
+| Floating Button | организм | ? | ✔ | [`floating-button.md`](floating-button.md) |
+| Skeletons | атом | ? | ✔ | [`skeletons.md`](skeletons.md) |
+| System | организм | ? | ✔ | [`system.md`](system.md) |
+| Mail | организм | ? | ✔ | [`mail.md`](mail.md) |
+| Tabs | молекула | ? | ✔ | [`tabs.md`](tabs.md) |
+| Tag | атом | ? | ✔ | [`tag.md`](tag.md) |
+| TextArea | молекула | ? | ✔ | [`text-area.md`](text-area.md) |
+| Userpic | атом | ? | ✔ | [`userpic.md`](userpic.md) |
 
 > Уровень для несверённых проставлен предварительно — уточняется при описании по Figma.
 > Значения цветов/типографики/радиусов живут в самом компоненте (см. [`../tokens.md`](../tokens.md)).

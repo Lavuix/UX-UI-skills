@@ -28,6 +28,19 @@
 
 _Ничего пока._
 
+## [1.8.0] — 2026-08-11
+
+### Added
+- Каталог компонентов Kit_Light завершён: сверенные с Figma карточки Popup,
+  Bottomsheet, Floating Button, Sidebar 3.0, Skeletons, System (Spinner/Divider/
+  MiniappButton), Mail, Tabs (+SegmentControl), Tag, TextArea, Userpic.
+- Итого 30 компонентов описаны по Figma (оси вариантов и состояния — из имён
+  вариантов), реестр INDEX полностью сверен (✔).
+
+### Notes
+- Пропущены компоненты со статусом `(In progress)`: Confirm, InputNumber (Stepper),
+  FormsCard — по правилу отбора.
+
 ## [1.7.0] — 2026-08-11
 
 ### Added
