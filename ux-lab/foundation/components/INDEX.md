@@ -20,16 +20,16 @@
 | Cell (2.0) | молекула | ✅ | ✔ | [`cell-2-0.md`](cell-2-0.md) |
 | Controls | атом | ✅ | ✔ | [`controls.md`](controls.md) |
 | Empty Content / 404 | организм | ✅ | ✔ | [`empty-content-404.md`](empty-content-404.md) |
-| Hint 2.0 | молекула | ✅ | ⚠ | _описать_ |
-| Input | молекула | ✅ | ⚠ | _описать_ |
+| Hint 2.0 | молекула | ✅ | ✔ | [`hint-2-0.md`](hint-2-0.md) |
+| Input | молекула | ✅ | ✔ | [`input.md`](input.md) |
 | Sidebar 3.0 | организм | ✅ | ⚠ | _описать_ |
 | Confirm | — | In progress | — | пропуск |
 | InputNumber (Stepper) | — | In progress | — | пропуск |
 | FormsCard | — | In progress | — | пропуск |
-| InputDate | молекула | ? | ⚠ | _описать_ |
-| InputSearch | молекула | ? | ⚠ | _описать_ |
-| MultiSelect | молекула | 🔍 | ⚠ | _описать_ |
-| Select | молекула | ? | ⚠ | _описать_ |
+| InputDate | молекула | ? | ✔ | [`input-date.md`](input-date.md) |
+| InputSearch | молекула | ? | ✔ | [`input-search.md`](input-search.md) |
+| MultiSelect | молекула | 🔍 | ✔ | [`multi-select.md`](multi-select.md) |
+| Select | молекула | ? | ✔ | [`select.md`](select.md) |
 | Scroll Bar | атом | ? | ⚠ | _описать_ |
 | Progress Bar | атом | 🔍 | ⚠ | _описать_ |
 | Pagination | молекула | ? | ⚠ | _описать_ |
