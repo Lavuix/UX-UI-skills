@@ -28,6 +28,21 @@
 
 _Ничего пока._
 
+## [1.2.0] — 2026-08-11
+
+### Added
+- Реальные токены дизайн-системы «Life», выгруженные из Figma (W3C Design Tokens):
+  - `ux-lab/foundation/tokens/` — исходный JSON (spaces, radiuses, brand,
+    theme.light/dark, typography.web/mobile/legacy-proxima).
+  - `ux-lab/foundation/tokens.md` — человекочитаемая сводка: отступы, радиусы,
+    палитра бренда (7 семейств), семантические цвета Light/Dark со состояниями,
+    типографика в трёх режимах (Web/Mobile/Legacy Proxima).
+- Раздел «Как это применяется в Figma» в `tokens.md`: связка переменные → текстовые
+  стили → режимы коллекции; правило «не хардкодить px».
+
+### Changed
+- `tokens.md` заменил placeholder-значения реальными.
+
 ## [1.1.0] — 2026-08-11
 
 ### Added
