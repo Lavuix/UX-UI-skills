@@ -28,6 +28,12 @@
 
 _Ничего пока._
 
+## [1.7.0] — 2026-08-11
+
+### Added
+- Сверенные с Figma карточки: Scroll Bar, Progress Bar, Pagination, Breadcrumbs,
+  Dropdown (Legacy/V2, многоуровневое меню Levels), Header, Toolbar, SnackBar.
+
 ## [1.6.0] — 2026-08-11
 
 ### Added

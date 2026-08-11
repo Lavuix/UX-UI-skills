@@ -30,14 +30,14 @@
 | InputSearch | молекула | ? | ✔ | [`input-search.md`](input-search.md) |
 | MultiSelect | молекула | 🔍 | ✔ | [`multi-select.md`](multi-select.md) |
 | Select | молекула | ? | ✔ | [`select.md`](select.md) |
-| Scroll Bar | атом | ? | ⚠ | _описать_ |
-| Progress Bar | атом | 🔍 | ⚠ | _описать_ |
-| Pagination | молекула | ? | ⚠ | _описать_ |
-| Breadcrumbs | молекула | ? | ⚠ | _описать_ |
-| Dropdown | молекула | ? | ⚠ | _описать_ |
-| Toolbar | организм | ? | ⚠ | _описать_ |
-| Header | организм | ? | ⚠ | _описать_ |
-| SnackBar | молекула | ? | ⚠ | _описать_ |
+| Scroll Bar | атом | ? | ✔ | [`scroll-bar.md`](scroll-bar.md) |
+| Progress Bar | атом | 🔍 | ✔ | [`progress-bar.md`](progress-bar.md) |
+| Pagination | молекула | ? | ✔ | [`pagination.md`](pagination.md) |
+| Breadcrumbs | молекула | ? | ✔ | [`breadcrumbs.md`](breadcrumbs.md) |
+| Dropdown | молекула | ? | ✔ | [`dropdown.md`](dropdown.md) |
+| Toolbar | организм | ? | ✔ | [`toolbar.md`](toolbar.md) |
+| Header | организм | ? | ✔ | [`header.md`](header.md) |
+| SnackBar | молекула | ? | ✔ | [`snack-bar.md`](snack-bar.md) |
 | Popup | организм | ? | ⚠ | _описать_ |
 | Bottomsheet | организм | ? | ⚠ | _описать_ |
 | Floating Button | организм | ? | ⚠ | _описать_ |
