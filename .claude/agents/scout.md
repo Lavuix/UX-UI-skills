@@ -58,7 +58,7 @@ Sizes / Icons) плюс токены кита. Поэтому:
 Updated: <дата> | Mode: full-ds | Brain: ./brain
 ## Figma
 - Library: Life-20_Kit (использует Brand / Theme / Font / Sizes / Icons)
-- Mockup files: активная вкладка Figma (рисовать в открытый файл; ссылку не спрашивать)
+- Mockup files: <ссылка на файл Figma, куда рисовать — спросить у дизайнера ОДИН раз и записать сюда>
 - Variable collections: Brand, Theme (Light/Dark), Font (Proxima Nova), Sizes, Icons
 ## Repository
 - Tokens: <путь или "none"> | Components: <путь или "none">
