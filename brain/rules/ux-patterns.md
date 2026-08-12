@@ -1,34 +1,33 @@
-# UX rules (general)
-Short, checkable rules. The Advisor justifies against them, the Analyst
-checks against them. Grown through the Chronicler once the designer approves.
+# UX-правила (общие)
+Короткие проверяемые правила. Советник обосновывает по ним, Аналитик по ним
+сверяет. Растут через Летописца после утверждения дизайнером.
 
-## Forms
-- A validation error belongs at its field, not in a banner at the top.
-- Validate on blur or on submit; not on every keystroke.
-- Error text: what happened plus what to do. Never just "Error!".
-- Submit disabled - show why, not just the disabled state.
-- One column of fields; short related ones (zip + city) may share a row.
-- Labels above fields, not as placeholders.
+## Формы
+- Ошибка валидации — у своего поля, а не баннером сверху.
+- Валидируй на потере фокуса или при отправке; не на каждое нажатие.
+- Текст ошибки: что случилось плюс что делать. Никогда не просто «Ошибка!».
+- Кнопка отправки disabled — покажи почему, а не только серый вид.
+- Одна колонка полей; короткие связанные (индекс + город) могут делить строку.
+- Подписи над полями, а не как плейсхолдеры.
 
-## Actions
-- Destructive - confirm with the object's name, not "Are you sure?".
-- Irreversible - the word "permanently" in the confirmation.
-- One primary action per screen; secondary ones are visually quieter.
-- After an action, an explicit result: toast / state change / navigation.
+## Действия
+- Деструктивное — подтверждай именем объекта, а не «Вы уверены?».
+- Необратимое — слово «навсегда» в подтверждении.
+- Одно главное действие на экран; второстепенные — визуально тише.
+- После действия — явный результат: тост / смена состояния / переход.
 
-## Flow
-- A wizard of 3+ steps needs a progress indicator and a way back without
-  losing data.
-- An operation over 1s needs a loading state; over 3s, one with a description.
-- Empty states are always designed: what this is plus how to fill it.
-- An interrupted flow resumes on return instead of starting over.
+## Поток
+- Мастер из 3+ шагов — индикатор прогресса и возврат без потери данных.
+- Операция дольше 1с — состояние загрузки; дольше 3с — с описанием.
+- Пустые состояния всегда спроектированы: что это плюс как заполнить.
+- Прерванный поток возобновляется при возврате, а не начинается заново.
 
-## Content
-- A button is named after its action: "Save draft", not "OK".
-- Numbers, dates and money in the project's locale format.
-- Long text truncates with the full version on hover/tap.
+## Контент
+- Кнопка названа по действию: «Сохранить черновик», а не «ОК».
+- Числа, даты и деньги — в формате локали проекта.
+- Длинный текст обрезается, полная версия — по наведению/тапу.
 
-## Accessibility
-- An interactive target is at least 44x44 on touch.
-- Focus is visible on every interactive element.
-- Meaning is never carried by colour alone.
+## Доступность
+- Интерактивная цель не меньше 44×44 на тач.
+- Фокус виден на каждом интерактивном элементе.
+- Смысл никогда не передаётся только цветом.

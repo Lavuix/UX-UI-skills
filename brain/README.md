@@ -1,13 +1,12 @@
-# The orchestra's brain
+# Память оркестра
 
-Memory of ONE project. Every project gets its own copy from the seed -
-projects cannot see each other. Only the Chronicler writes here, and only
-rules the designer has approved.
+Память ОДНОГО проекта. Проекты не видят друг друга. Пишет сюда только Летописец и
+только правила, утверждённые дизайнером.
 
-- rules/ux-patterns.md - baseline UX rules (starter set, grows over time)
-- rules/personal.md    - your personal preferences (filled by the Chronicler)
-- precedents/index.md  - index of solved patterns in this project
-- journal/             - raw review entries, one file per month
+- rules/ux-patterns.md — базовые UX-правила (стартовый набор, растёт со временем)
+- rules/personal.md    — личные предпочтения (заполняет Летописец)
+- precedents/index.md  — индекс решённых паттернов этого проекта
+- journal/             — сырые записи ревью, по файлу на месяц
 
-Полезное правило, годное для всей команды, отдаём в общую библиотеку практик
-кита — через Антона (см. `START-HERE.md`). Автоматического переноса нет.
+Полезное правило, годное для всей команды, отдаём в общую библиотеку практик кита —
+через Антона (см. `START-HERE.md`). Автоматического переноса нет.

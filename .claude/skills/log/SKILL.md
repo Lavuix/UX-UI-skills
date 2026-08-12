@@ -1,21 +1,21 @@
 ---
-description: Record an edit made outside the /feature cycle - by hand, later, "tomorrow". Call /log <what you changed and why>. Without this, out-of-cycle edits never reach the learning loop.
+description: Записать правку, сделанную вне цикла /feature — руками, позже, «завтра». Зови /log <что изменил и почему>. Без этого правки вне цикла не попадают в обучение.
 disable-model-invocation: true
 ---
 
-The designer reports an edit made outside the cycle: $ARGUMENTS
+Дизайнер сообщает о правке, сделанной вне цикла: $ARGUMENTS
 
-Empty or a literal `$ARGUMENTS` - ask what exactly was changed.
+Пусто или буквально `$ARGUMENTS` — спроси, что именно изменили.
 
-1. Call the chronicler agent in light mode: one entry in
-   brain/journal/<YYYY-MM>.md:
-   ### <date> - out-of-cycle edit
-   - What: <from the designer's words>
-   - Why: <from the designer's words; if missing, ask ONE question>
-   - Affected: <frame/feature, if named>
-2. The Chronicler checks: does this edit resemble an existing brain rule?
-   If it does, mark it "rule X violated outside the cycle" (that feeds the
-   violation rate). Repeated >=2 times in the journal -> propose a rule
-   right now, without waiting for the end of a cycle.
-3. Remind the designer in one line: out-of-cycle edits do not count towards
-   the untouched-frames metric, so no trend is computed from them.
+1. Позови агента chronicler в лёгком режиме: одна запись в
+   brain/journal/<ГГГГ-ММ>.md:
+   ### <дата> - правка вне цикла
+   - Что: <со слов дизайнера>
+   - Почему: <со слов дизайнера; если нет, задай ОДИН вопрос>
+   - Затронуто: <фрейм/фича, если названы>
+2. Летописец проверяет: похожа ли эта правка на существующее правило памяти? Если
+   да — пометь «правило X нарушено вне цикла» (это питает частоту нарушений).
+   Повторилось ≥2 раз в журнале → предложи правило прямо сейчас, не дожидаясь конца
+   цикла.
+3. Напомни дизайнеру одной строкой: правки вне цикла не идут в метрику нетронутых
+   фреймов, поэтому тренд по ним не считается.

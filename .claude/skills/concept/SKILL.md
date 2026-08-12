@@ -1,76 +1,70 @@
 ---
-description: A design concept for one key page of a greenfield project - 2-3 visual directions to agree on, before any design system exists. Pure visuals. Call /concept; the brief can be a file or plain text.
+description: Дизайн-концепт одной ключевой страницы нового продукта — 2-3 визуальных направления для согласования, ещё до дизайн-системы. Чистая визуалка. Зови /concept; бриф — файлом или текстом. Нужно редко.
 disable-model-invocation: true
 ---
 
-CONCEPT mode. This is the one place in the orchestra where raw values are
-LEGAL: there is no system yet, you are searching for a visual language.
-The "tokens only" invariant does not apply until the concept is approved.
+Режим КОНЦЕПТ. Это единственное место в оркестре, где сырые значения ЛЕГАЛЬНЫ:
+системы ещё нет, ты ищешь визуальный язык. Инвариант «только токены» не действует,
+пока концепт не утверждён.
 
-Brief: $ARGUMENTS
+Бриф: $ARGUMENTS
 
-If the line above is empty or still shows a literal `$ARGUMENTS`, the
-argument was not substituted. Ask the designer for the brief (step 1).
+Если строка выше пустая или в ней буквально `$ARGUMENTS` — аргумент не подставился.
+Спроси у дизайнера бриф (шаг 1).
 
-## Step 1. The brief
-If what you were given is unclear, ask the designer everything at once,
-not one question at a time: product and audience in one sentence; the key
-page (landing? dashboard? product card?); 3 mood words; anti-references
-("definitely not like X"); real content for the page, if any.
-"Lorem" placeholders are forbidden - nobody signs off a concept with fake
-text. No content - write plausible copy yourself from the brief and say
-that you did.
+## Шаг 1. Бриф
+Если данное непонятно, спроси у дизайнера всё сразу, а не по одному вопросу:
+продукт и аудитория одной фразой; ключевая страница (лендинг? дашборд? карточка
+товара?); 3 слова настроения; анти-референсы («точно не как X»); реальный контент
+страницы, если есть.
+Заглушки «Lorem» запрещены — концепт с фейковым текстом никто не утверждает. Нет
+контента — напиши правдоподобный текст сам из брифа и скажи, что сделал это.
 
-## Step 2. Directions IN WORDS (cheap, before building)
-Sources of visual reference for this step (concept mode only):
-- The ui-ux-pro-max skill, if installed (/skills will show it): use its
-  style, palette and type-pairing databases to pick directions suited to
-  the product category from the brief.
-- Refero Styles (styles.refero.design): the FREE part - a catalogue of
-  2000+ AI-readable design systems of real products (DESIGN.md: colours,
-  typography, spacing, rules). Use WebFetch to open 2-3 styles relevant to
-  the product category and use their DESIGN.md as a reference for the
-  DIRECTION (not a copy: inspiration from the logic of the system, not
-  reproduction of a brand).
+## Шаг 2. Направления СЛОВАМИ (дёшево, до сборки)
+Источники визуальных референсов для этого шага (только режим концепт):
+- Скилл ui-ux-pro-max, если установлен (/skills покажет его): бери его базы стилей,
+  палитр и пар шрифтов, чтобы подобрать направления под категорию продукта из брифа.
+- Refero Styles (styles.refero.design): БЕСПЛАТНАЯ часть — каталог 2000+
+  читаемых ИИ дизайн-систем реальных продуктов (DESIGN.md: цвета, типографика,
+  отступы, правила). Через WebFetch открой 2-3 стиля под категорию продукта и
+  используй их DESIGN.md как референс НАПРАВЛЕНИЯ (не копию: вдохновение логикой
+  системы, а не воспроизведение бренда).
 
-Propose 3 distinct directions. For each: a mood name, a type pairing,
-colour logic (not a palette but the logic: "monochrome plus one accent"),
-density/air, character of shapes, and - if the direction leans on a style
-from a database - a link to the source. The directions MUST differ; three
-shades of one taste do not count.
+Предложи 3 разных направления. На каждое: имя-настроение, пара шрифтов, логика цвета
+(не палитра, а логика: «монохром плюс один акцент»), плотность/воздух, характер
+форм и — если направление опирается на стиль из базы — ссылку на источник.
+Направления ДОЛЖНЫ различаться; три оттенка одного вкуса не считаются.
 
-### PAUSE - choosing directions
-The designer picks 2 (or edits and picks). Building three is expensive;
-one leaves nothing to choose between at sign-off.
+### ПАУЗА — выбор направлений
+Дизайнер выбирает 2 (или правит и выбирает). Строить три — дорого; одно не оставляет
+выбора при утверждении.
 
-## Step 3. Build via HTML -> Figma
-For each chosen direction:
-1. Build ONE complete page as a self-contained HTML file
-   (concepts/<direction>.html in the repo): real content, considered
-   typography, all the page's sections. This is your strong suit - use it
-   fully.
-2. Send it to Figma via generate_figma_design onto its own page named
-   "Concept <A/B> - <name> - <date>".
-3. Next to the mockup, a passport frame for the direction: mood, type
-   pairing, colour logic, what this direction optimises for and what it
-   pays - so it can be defended to stakeholders.
+## Шаг 3. Сборка через HTML → Figma
+На каждое выбранное направление:
+1. Собери ОДНУ полную страницу самодостаточным HTML-файлом
+   (concepts/<направление>.html в репозитории): реальный контент, продуманная
+   типографика, все секции страницы. Это твоя сильная сторона — используй по полной.
+2. Отправь в Figma через generate_figma_design на отдельную страницу «Concept
+   <A/B> - <имя> - <дата>».
+3. Рядом с макетом — фрейм-паспорт направления: настроение, пара шрифтов, логика
+   цвета, под что оптимизирует и чем платит — чтобы можно было защитить перед
+   стейкхолдерами.
 
-## Step 4. Handover
-- CHANGELOG-DESIGN.md: entry "Concepts - <date> - [under review]"
-- Tell the designer: once a direction is chosen, the approved HTML is an
-  EXACT code reference for /foundation. The chain is:
-  /concept -> sign-off -> /foundation concepts/<chosen>.html -> /feature.
-  Nothing has to be re-extracted by eye - the code already exists.
+## Шаг 4. Передача
+- CHANGELOG-DESIGN.md: запись «Concepts - <дата> - [на ревью]»
+- Скажи дизайнеру: как выбрано направление, утверждённый HTML — ТОЧНЫЙ код-референс
+  для /foundation. Цепочка: /concept → утверждение → /foundation
+  concepts/<выбранный>.html → /feature. Пересчитывать «на глаз» ничего не надо —
+  код уже есть.
 
-## Tool isolation for concept mode
-ui-ux-pro-max and Refero Styles work ONLY here. Do not call or mention them
-in /feature or /foundation: there, decisions are dictated by the project's
-design system, not by style databases.
+## Изоляция инструментов режима концепт
+ui-ux-pro-max и Refero Styles работают ТОЛЬКО здесь. Не зови и не упоминай их в
+/feature или /foundation: там решения диктует дизайн-система проекта, а не базы
+стилей.
 
-## Limits (say them honestly)
-- generate_figma_design transfers the page as layers, but the layer
-  structure will not be ideal - this is material for agreeing on VISUALS,
-  not a production mockup. Production mockups start after /foundation with
-  clean components.
-- Changes to a direction after sign-off go into the HTML and get
-  re-transferred, not hand-tweaked in the concept's layers.
+## Ограничения (скажи их честно)
+- generate_figma_design переносит страницу слоями, но структура слоёв будет не
+  идеальной — это материал для согласования ВИЗУАЛА, не продакшн-макет. Продакшн-
+  макеты начинаются после /foundation с чистыми компонентами.
+- Правки направления после утверждения идут в HTML и переносятся заново, а не
+  подкручиваются вручную в слоях концепта.

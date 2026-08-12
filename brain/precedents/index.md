@@ -1,8 +1,8 @@
-# Project precedent index
-Filled in by: the Scout (flows already built in this project) and the
-Chronicler (decisions confirmed in review).
+# Индекс прецедентов проекта
+Заполняют: Разведчик (потоки, уже собранные в проекте) и Летописец (решения,
+подтверждённые в ревью).
 
-Format: | Pattern | Where to look | Decision in one line |
+Формат: | Паттерн | Где смотреть | Решение одной строкой |
 
-| Pattern | Where | Decision |
+| Паттерн | Где | Решение |
 |---|---|---|

@@ -1,58 +1,56 @@
 ---
-description: The design-system foundation for a greenfield project - from a style reference (Stitch/HTML code, a link, a screenshot) it creates variable collections in Figma, tokens in the repository and starter components. Call /foundation <path to reference or link>.
+description: Основа дизайн-системы для нового продукта — из референса стиля (Stitch/HTML-код, ссылка, скриншот) создаёт коллекции переменных в Figma, токены в репозитории и стартовые компоненты. Зови /foundation <путь к референсу или ссылка>. Нужно редко — только для совсем нового продукта с другой дизайн-системой.
 disable-model-invocation: true
 ---
 
-You are building the design-system foundation of a new project.
-Reference: $ARGUMENTS
+Ты строишь основу дизайн-системы нового проекта.
+Референс: $ARGUMENTS
 
-If the line above is empty or still shows a literal `$ARGUMENTS`, ask the
-designer for the path to the reference.
+Если строка выше пустая или в ней буквально `$ARGUMENTS` — спроси у дизайнера путь
+к референсу.
 
-## Step 1. Assess the input
-Identify the kind of reference and tell the designer honestly how precise
-it will be:
-- Code (HTML/CSS, Stitch export, tokens.json) -> values are EXACT.
-- Figma file -> get_variable_defs / get_design_context -> exact.
-- Screenshot -> values are APPROXIMATE. Warn: "colours were picked off an
-  image, verify the hex values before approving."
+## Шаг 1. Оцени вход
+Определи тип референса и честно скажи дизайнеру, насколько точным он будет:
+- Код (HTML/CSS, экспорт Stitch, tokens.json) → значения ТОЧНЫЕ.
+- Файл Figma → get_variable_defs / get_design_context → точно.
+- Скриншот → значения ПРИБЛИЗИТЕЛЬНЫЕ. Предупреди: «цвета сняты с картинки, сверь
+  hex перед утверждением».
 
-## Step 2. Extraction and layering
-Pull out every value: palette, spacing scale, radii, typography (families,
-sizes, weights, line heights). Lay them out in two layers:
-- primitives: raw values on scales (color.blue.500, space.4)
-- semantic: meanings aliased onto primitives (bg.surface, text.muted,
-  bg.accent, bg.danger, space.inline-md, radius.control)
-Propose, do NOT decide: which colour is the accent, which is danger.
+## Шаг 2. Извлечение и слои
+Вытащи все значения: палитра, шкала отступов, радиусы, типографика (семейства,
+размеры, начертания, межстрочные). Разложи в два слоя:
+- primitives: сырые значения на шкалах (color.blue.500, space.4)
+- semantic: смыслы, привязанные к примитивам (bg.surface, text.muted, bg.accent,
+  bg.danger, space.inline-md, radius.control)
+Предлагай, но НЕ решай: какой цвет акцентный, какой — опасный (danger).
 
-### PAUSE 1 - validating names
-A table: value | primitive | semantic name | your reasoning.
-Assigning meanings is the designer's decision. Wait for edits and for
-"approved".
+### ПАУЗА 1 — проверка имён
+Таблица: значение | примитив | семантическое имя | твоё обоснование.
+Назначение смыслов — решение дизайнера. Жди правок и «утверждаю».
 
-## Step 3. Writing (only after approval)
-1. Repository: tokens/primitives.json and tokens/semantic.json (DTCG,
-   semantics as aliases {color.blue.500}). Show the diff before writing.
-2. Figma (use_figma): collection "1. Primitives" with no modes;
-   collection "2. Semantic" with Light/Dark modes, values as aliases.
-   Dark mode: propose inverting the neutrals, mark it "draft theme".
-3. Typography: text styles from the reference. Check that the font is
-   available in Figma; if it is not, SAY SO - do not silently substitute.
+## Шаг 3. Запись (только после утверждения)
+1. Репозиторий: tokens/primitives.json и tokens/semantic.json (DTCG, семантика как
+   алиасы {color.blue.500}). Покажи diff перед записью.
+2. Figma (use_figma): коллекция «1. Primitives» без режимов; коллекция «2. Semantic»
+   с режимами Light/Dark, значения как алиасы. Тёмная тема: предложи инвертировать
+   нейтральные, пометь «черновая тема».
+3. Типографика: текстовые стили из референса. Проверь, доступен ли шрифт в Figma;
+   если нет — СКАЖИ об этом, не подменяй молча.
 
-## Step 4. Starter components (one at a time, each shown)
-Exactly 6: Button, Input, Card, Badge, Checkbox, Toggle.
-- Page "Foundation - v0 - <date>"
-- Each with states default/hover/focus/disabled (+error for Input),
-  minimal variants (primary/secondary for Button, no more)
-- All values bound ONLY to semantic variables
-- Auto Layout, clear variant property names
-- After each component, pause: screenshot, "next?"
-Do NOT build complex components (Select, DatePicker, Table) - they will
-appear later, driven by real feature needs.
+## Шаг 4. Стартовые компоненты (по одному, каждый показываем)
+Ровно 6: Button, Input, Card, Badge, Checkbox, Toggle.
+- Страница «Foundation - v0 - <дата>»
+- У каждого состояния default/hover/focus/disabled (+error у Input), минимум
+  вариантов (primary/secondary у Button, не больше)
+- Все значения привязаны ТОЛЬКО к семантическим переменным
+- Auto Layout, понятные имена свойств вариантов
+- После каждого компонента пауза: скриншот, «дальше?»
+Сложные компоненты (Select, DatePicker, Table) НЕ строй — они появятся позже, от
+реальных нужд фич.
 
-## Step 5. Finalising
-- Suggest the designer publishes the library by hand (more reliable)
-- PROJECT.md: mode -> full-ds, record the collections and components
-- CHANGELOG-DESIGN.md: entry "v0 - foundation - <date>": reference source,
-  how many tokens, which components
-- Remind them: /feature now works in full mode
+## Шаг 5. Финал
+- Предложи дизайнеру опубликовать библиотеку вручную (надёжнее)
+- PROJECT.md: режим → full-ds, запиши коллекции и компоненты
+- CHANGELOG-DESIGN.md: запись «v0 - foundation - <дата>»: источник-референс, сколько
+  токенов, какие компоненты
+- Напомни: /feature теперь работает в полном режиме
