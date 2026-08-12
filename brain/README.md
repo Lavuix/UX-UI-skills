@@ -9,5 +9,5 @@ rules the designer has approved.
 - precedents/index.md  - index of solved patterns in this project
 - journal/             - raw review entries, one file per month
 
-Carrying personal rules between projects is manual only: orchestra -Promote
-(project -> your seed) and a fresh install in new projects.
+Полезное правило, годное для всей команды, отдаём в общую библиотеку практик
+кита — через Антона (см. `START-HERE.md`). Автоматического переноса нет.

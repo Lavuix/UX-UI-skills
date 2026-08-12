@@ -130,14 +130,13 @@ hypothesis-driven дизайна + встроенный **оркестр** (аг
    git add -A && git commit -m "..." && git tag vX.Y.Z && git push && git push --tags
    ```
 
-## Что НЕ трогать здесь
+## Оркестр внутри репы — ничего устанавливать/обновлять не надо
 
-Артефакты, которые оркестр создаёт **в проекте-потребителе**, в этот репо не
-попадают (отсечены в `.gitignore`): `.claude/`, `brain/`, `PROJECT.md`,
-`CHANGELOG-DESIGN.md`. Историю самих макетов ведёт агент Chronicler в
-`CHANGELOG-DESIGN.md` — это **не** то же, что `CHANGELOG.md` кита.
+Оркестр (`.claude/skills/` + `.claude/agents/`) и стартовая память (`brain/`)
+**лежат прямо в репозитории** и версионируются вместе с китом. Клонировал —
+`/start` и `/feature` работают сразу. Никаких `orchestra`, `-Update`, seed —
+это была старая схема с отдельной установкой, она убрана. Подробнее — [`ОРКЕСТР.md`](ОРКЕСТР.md).
 
-## Как запускать оркестр
-
-Кратко: `orchestra` → `claude` → `/start` (первой командой) → `/feature specs/<файл>.md`.
-Полностью, с установкой под macOS/Linux/Windows — в [`RUNNING.md`](RUNNING.md).
+Игнорируются только генерируемые под каждый запуск `PROJECT.md` и
+`CHANGELOG-DESIGN.md` (историю макетов ведёт агент Chronicler в
+`CHANGELOG-DESIGN.md` — это **не** то же, что `CHANGELOG.md` кита).

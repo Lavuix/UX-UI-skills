@@ -43,16 +43,16 @@ For every candidate:
 - which journal entries it is based on
 Once approved - write down exactly what was approved, word for word.
 
-## 3a. The "promote candidate" marker format (strict)
-A rule the designer considers portable to the PUBLIC seed is written as a
-single bullet line, with the marker in parentheses at the END OF THAT SAME
-LINE:
+## 3a. The "portable rule" marker format (strict)
+A rule the designer considers portable to the shared kit library (best
+practices) is written as a single bullet line, with the marker in parentheses
+at the END OF THAT SAME LINE:
 
-    - Show validation errors at the field (promote candidate)
+    - Show validation errors at the field (общий паттерн)
 
-Never mark a section heading, and never assume the marker extends to
-neighbouring lines: `orchestra -Share` takes ONLY the line the marker sits
-on. One rule, one marker.
+The marker applies ONLY to the line it sits on; never mark a section heading
+and never assume it extends to neighbouring lines. One rule, one marker. Such
+a line is a candidate to hand to Anton for the kit's best-practices library.
 A rule containing a client name, a product name, a link, a node id or a
 specific hex is not marked at all - it is project data, not portable.
 

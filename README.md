@@ -17,7 +17,8 @@ Hypothesis-driven design как повторяемый процесс: кажд�
 
 - **[`CLAUDE.md`](CLAUDE.md)** — инструкция для CLI-агента: как работать с китом и
   когда подсказывать, что зафиксировать (Claude Code читает её автоматически).
-- **[`RUNNING.md`](RUNNING.md)** — как запустить оркестр из CLI (macOS/Linux + Windows).
+- **[`ОРКЕСТР.md`](ОРКЕСТР.md)** — сложный режим (пункт 4): что делает оркестр,
+  как запустить (он уже в репе, ставить нечего).
 - **[`VERSION`](VERSION)** + **[`CHANGELOG.md`](CHANGELOG.md)** — версионирование кита (SemVer).
 - **`ux-lab/`** — ядро процесса:
   - `README.md` — схема цикла и карта папок (начни отсюда).
@@ -30,10 +31,11 @@ Hypothesis-driven design как повторяемый процесс: кажд�
 
 ## С чего начать
 
-1. Прочитать `ux-lab/README.md` — как устроен цикл.
-2. Свериться с `ux-lab/rules/README.md` — чеклист Definition of Done.
-3. Завести гипотезу из `ux-lab/templates/hypothesis.md`, оформить спеку в `specs/`.
-4. Запустить оркестр по `RUNNING.md`: `orchestra` → `claude` → `/start` → `/feature`.
+1. Открыть папку в Claude Code и написать задачу словами — Claude встретит и предложит
+   4 действия (см. [`START-HERE.md`](START-HERE.md)).
+2. Для сложного режима — выбрать пункт 4 (оркестр), см. [`ОРКЕСТР.md`](ОРКЕСТР.md).
+3. Правила и Definition of Done — в `ux-lab/rules/README.md`, стиль — в
+   `ux-lab/foundation/tokens.md`.
 
 ## Как пополнять и версионировать
 
