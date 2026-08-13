@@ -23,6 +23,7 @@
 | Hint 2.0 | молекула | ✅ | ✔ | [`hint-2-0.md`](hint-2-0.md) |
 | Input | молекула | ✅ | ✔ | [`input.md`](input.md) |
 | Sidebar 3.0 | организм | ✅ | ✔ | [`sidebar-3-0.md`](sidebar-3-0.md) |
+| Table | организм | ✅ | ✔ | [`table.md`](table.md) |
 | Confirm | — | In progress | — | пропуск |
 | InputNumber (Stepper) | — | In progress | — | пропуск |
 | FormsCard | — | In progress | — | пропуск |
