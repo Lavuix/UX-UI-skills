@@ -9,6 +9,8 @@
 | Сборка Confirm | Popup(Desktop)/Bottomsheet(Mobile) + Floating Button + Action Button, 520/722/900, слот под контент | ⚪ допущение | `patterns/confirm-popup-composition.md` |
 | Confirm при удалении | Позиции кнопок фиксированы, для деструктивного действия меняем стиль (Type), не расположение | 🟡 эвристика | `patterns/confirm-destructive-action.md` |
 | Дефолты компонентов | Сразу при вставке выключай декоративные свойства (иконки, открытые списки, hint/check, empty-состояние) — иначе они остаются видны на макете | ⚪ допущение | `patterns/component-defaults-cleanup.md` |
+| Компоненты только из кита | Никогда не бери/копируй компоненты из макетов-образцов — только `search_design_system` из библиотеки кита | ⚪ допущение | `patterns/source-components-from-kit-only.md` |
+| Иконки: Outline Light, не Regular | В Life-10_Icons два набора (Regular/Light) под одинаковыми именами — бери Light, сверяя со страницей `198:4973`; нет light-варианта — fallback на Edit | ⚪ допущение | `patterns/icon-family-outline-light.md` |
 | _[твой паттерн]_ | … | ⚪ | `patterns/…` |
 
 ## Уровни уверенности

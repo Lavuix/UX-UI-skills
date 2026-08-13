@@ -28,6 +28,21 @@
 
 _Ничего пока._
 
+## [1.19.0] — 2026-08-13
+
+### Added
+- `best-practices/patterns/source-components-from-kit-only.md` — паттерн: компоненты
+  на макет берём только из опубликованной библиотеки кита через
+  `search_design_system`, никогда не копируем/не собираем «на глаз» из макетов-
+  образцов (шаблонных файлов вроде `Life-04_Templates`) — те годятся только как
+  образец раскладки.
+- `best-practices/patterns/icon-family-outline-light.md` — паттерн: в
+  `Life-10_Icons` два параллельных набора символов («Outlines Regular» /
+  «Outlines Light») под похожими именами; для макетов кита — только Light,
+  сверяя с исходной страницей `198:4973`; без light-варианта — fallback на
+  иконку Edit, а не Regular-аналог.
+- Две строки в `best-practices/INDEX.md`.
+
 ## [1.18.0] — 2026-08-13
 
 ### Added
