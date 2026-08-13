@@ -8,6 +8,7 @@
 | Короткий онбординг | Собирать минимум на входе, остальное — по мере надобности | 🟢 данные | `patterns/EXAMPLE-forms.md` |
 | Сборка Confirm | Popup(Desktop)/Bottomsheet(Mobile) + Floating Button + Action Button, 520/722/900, слот под контент | ⚪ допущение | `patterns/confirm-popup-composition.md` |
 | Confirm при удалении | Позиции кнопок фиксированы, для деструктивного действия меняем стиль (Type), не расположение | 🟡 эвристика | `patterns/confirm-destructive-action.md` |
+| Дефолты компонентов | Сразу при вставке выключай декоративные свойства (иконки, открытые списки, hint/check, empty-состояние) — иначе они остаются видны на макете | ⚪ допущение | `patterns/component-defaults-cleanup.md` |
 | _[твой паттерн]_ | … | ⚪ | `patterns/…` |
 
 ## Уровни уверенности
