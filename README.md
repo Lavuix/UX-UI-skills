@@ -27,14 +27,18 @@ Hypothesis-driven design как повторяемый процесс: кажд�
   - `rules/` — свод самых важных UI/UX-правил (+ Definition of Done).
   - `foundation/tokens.md` — реальные токены, извлечённые из Figma.
   - `templates/`, `hypotheses/`, `best-practices/` — шаблоны и база знаний.
+  - `research/` — библиотека персон + отчёты прогонов на синтетических
+    пользователях (режим Исследователь, пункт 5).
 - **`specs/`** — спеки-входы для оркестра Design Orchestra (`/feature specs/<файл>.md`).
 
 ## С чего начать
 
 1. Открыть папку в Claude Code и написать задачу словами — Claude встретит и предложит
-   4 действия (см. [`START-HERE.md`](START-HERE.md)).
+   5 действий (см. [`START-HERE.md`](START-HERE.md)).
 2. Для сложного режима — выбрать пункт 4 (оркестр), см. [`ОРКЕСТР.md`](ОРКЕСТР.md).
-3. Правила и Definition of Done — в `ux-lab/rules/README.md`, стиль — в
+3. Проверить готовый макет на пользователях без сборки — пункт 5 (пришли картинку
+   или ссылку на Figma).
+4. Правила и Definition of Done — в `ux-lab/rules/README.md`, стиль — в
    `ux-lab/foundation/tokens.md`.
 
 ## Как пополнять и версионировать
