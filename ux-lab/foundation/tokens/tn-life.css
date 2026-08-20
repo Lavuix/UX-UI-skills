@@ -1,0 +1,259 @@
+/*
+  Токены дизайн-системы «Life» (TN Life) — CSS custom properties.
+  Источник значений: ../tokens.md (реальные значения из Figma).
+  Не редактировать значения руками — если токен изменился в Figma,
+  поправь ../tokens.md и синхронизируй этот файл.
+
+  Использование в HTML-прототипах (см. .claude/skills/html-prototype/SKILL.md):
+  вставь содержимое этого файла целиком в <style> прототипа (прототип должен
+  быть самодостаточным .html файлом, без внешних зависимостей), дальше бери
+  только переменные — не хардкодь HEX/px вручную.
+
+  Тема по умолчанию — Light. Для тёмной темы добавь на корневой элемент
+  data-theme="dark".
+*/
+
+:root {
+  /* Отступы (Spaces) */
+  --space-none: 0px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  /* Радиусы (Radiuses) */
+  --radius-none: 0px;
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-round: 100px;
+
+  /* Семантические цвета — Light (по умолчанию) */
+  --content-primary-a: #1E2228;
+  --content-primary-a-hover: #444C59;
+  --content-primary-a-pressed: #000000;
+  --content-primary-a-disabled: #BCC1CE;
+
+  --content-primary-b: #FFFFFF;
+  --content-primary-b-hover: #FFFFFF;
+  --content-primary-b-pressed: #FFFFFF;
+  --content-primary-b-disabled: #BCC1CE;
+
+  --content-secondary: #667387;
+  --content-secondary-hover: #7A879D;
+  --content-secondary-pressed: #4E5867;
+  --content-secondary-disabled: #BCC1CE;
+
+  --content-tertiary: #9CA3B6;
+  --content-tertiary-hover: #ABB0C1;
+  --content-tertiary-pressed: #7A879D;
+  --content-tertiary-disabled: #BCC1CE;
+
+  --content-accent: #E11B11;
+  --content-accent-hover: #AE1603;
+  --content-accent-pressed: #961500;
+  --content-accent-disabled: #BCC1CE;
+
+  --content-system-positive: #009C37;
+  --content-system-negative: #E11B11;
+  --content-system-warning: #FF8A0C;
+  --content-system-neutral: #4E5867;
+
+  --content-action: #1284FF;
+  --content-action-hover: #006EE4;
+  --content-action-pressed: #004998;
+  --content-action-disabled: #BCC1CE;
+
+  --background-primary-a: #FFFFFF;
+  --background-primary-a-hover: #FCFCFD;
+  --background-primary-a-pressed: #F9F9FA;
+  --background-primary-a-disabled: #F9F9FA;
+
+  --background-primary-b: #1E2228;
+  --background-primary-b-hover: #444C59;
+  --background-primary-b-pressed: #000000;
+  --background-primary-b-disabled: #BCC1CE;
+
+  --background-secondary-a: #F3F5F7;
+  --background-secondary-a-hover: #E6E8ED;
+  --background-secondary-a-pressed: #D7DAE1;
+  --background-secondary-a-disabled: #F9F9FA;
+
+  --background-secondary-b: #4E5867;
+  --background-secondary-b-hover: #7A879D;
+  --background-secondary-b-pressed: #3B434F;
+  --background-secondary-b-disabled: #F9F9FA;
+
+  --background-tertiary: #E6E8ED;
+  --background-tertiary-hover: #D7DAE1;
+  --background-tertiary-pressed: #C8CCD6;
+  --background-tertiary-disabled: #F9F9FA;
+
+  --background-accent: #E11B11;
+  --background-accent-hover: #AE1603;
+  --background-accent-pressed: #961500;
+  --background-accent-disabled: #F9F9FA;
+
+  --border-primary-a: #1E2228;
+  --border-primary-a-hover: #444C59;
+  --border-primary-a-pressed: #000000;
+  --border-primary-a-disabled: #E6E8ED;
+
+  --border-primary-b: #FFFFFF;
+  --border-primary-b-hover: #E6E8ED;
+  --border-primary-b-pressed: #D7DAE1;
+  --border-primary-b-disabled: #E6E8ED;
+
+  --border-secondary: #D7DAE1;
+  --border-secondary-hover: #C8CCD6;
+  --border-secondary-pressed: #BCC1CE;
+  --border-secondary-disabled: #E6E8ED;
+
+  --border-accent: #E11B11;
+  --border-accent-hover: #AE1603;
+  --border-accent-pressed: #961500;
+  --border-accent-disabled: #E6E8ED;
+
+  /* Типографика — режим Web (px) */
+  --font-family-heading: "Inter", -apple-system, "Segoe UI", sans-serif;
+  --font-family-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+
+  --font-size-headline-large: 26px;
+  --font-size-headline-medium: 22px;
+  --font-size-headline-small: 18px;
+  --font-size-title-medium: 15px;
+  --font-size-title-small: 13px;
+  --font-size-body-medium: 15px;
+  --font-size-body-small: 13px;
+  --font-size-label-medium: 11px;
+  --font-size-label-small: 10px;
+
+  --font-weight-text: 400;
+  --font-weight-accent: 500;
+  --font-weight-heading: 600;
+
+  --line-height-headline-large: 35px;
+  --line-height-headline-medium: 30px;
+  --line-height-headline-small: 24px;
+  --line-height-title-medium: 21px;
+  --line-height-title-small: 18px;
+  --line-height-body-medium: 23px;
+  --line-height-body-small: 20px;
+  --line-height-label-medium: 17px;
+  --line-height-label-small: 14px;
+}
+
+[data-theme="dark"] {
+  --content-primary-a: #F3F5F7;
+  --content-primary-a-hover: #C8CCD6;
+  --content-primary-a-pressed: #D7DAE1;
+  --content-primary-a-disabled: #3B434F;
+
+  --content-primary-b: #F3F5F7;
+  --content-primary-b-hover: #C8CCD6;
+  --content-primary-b-pressed: #D7DAE1;
+  --content-primary-b-disabled: #3B434F;
+
+  --content-secondary: #667387;
+  --content-secondary-hover: #4E5867;
+  --content-secondary-pressed: #3B434F;
+  --content-secondary-disabled: #3B434F;
+
+  --content-tertiary: #667387;
+  --content-tertiary-hover: #4E5867;
+  --content-tertiary-pressed: #3B434F;
+  --content-tertiary-disabled: #3B434F;
+
+  --content-accent: #AE1603;
+  --content-accent-hover: #841500;
+  --content-accent-pressed: #670F00;
+  --content-accent-disabled: #3B434F;
+
+  --content-system-positive: #009C37;
+  --content-system-negative: #E11B11;
+  --content-system-warning: #FF8A0C;
+  --content-system-neutral: #4E5867;
+
+  --content-action: #2B91FF;
+  --content-action-hover: #006EE4;
+  --content-action-pressed: #004998;
+  --content-action-disabled: #3B434F;
+
+  --background-primary-a: #1E2228;
+  --background-primary-a-hover: #22262D;
+  --background-primary-a-pressed: #262A32;
+  --background-primary-a-disabled: #262A32;
+
+  --background-primary-b: #ABB0C1;
+  --background-primary-b-hover: #8890A7;
+  --background-primary-b-pressed: #7A879D;
+  --background-primary-b-disabled: #262A32;
+
+  --background-secondary-a: #262A32;
+  --background-secondary-a-hover: #292F37;
+  --background-secondary-a-pressed: #22262D;
+  --background-secondary-a-disabled: #262A32;
+
+  --background-secondary-b: #262A32;
+  --background-secondary-b-hover: #292F37;
+  --background-secondary-b-pressed: #22262D;
+  --background-secondary-b-disabled: #262A32;
+
+  --background-tertiary: #2D333C;
+  --background-tertiary-hover: #3B434F;
+  --background-tertiary-pressed: #2D333C;
+  --background-tertiary-disabled: #262A32;
+
+  --background-accent: #AE1603;
+  --background-accent-hover: #841500;
+  --background-accent-pressed: #670F00;
+  --background-accent-disabled: #262A32;
+
+  --border-primary-a: #FFFFFF;
+  --border-primary-a-hover: #E6E8ED;
+  --border-primary-a-pressed: #D7DAE1;
+  --border-primary-a-disabled: #262A32;
+
+  --border-primary-b: #3B434F;
+  --border-primary-b-hover: #444C59;
+  --border-primary-b-pressed: #2D333C;
+  --border-primary-b-disabled: #262A32;
+
+  --border-secondary: #2D333C;
+  --border-secondary-hover: #3B434F;
+  --border-secondary-pressed: #3B434F;
+  --border-secondary-disabled: #2D333C;
+
+  --border-accent: #E11B11;
+  --border-accent-hover: #AE1603;
+  --border-accent-pressed: #961500;
+  --border-accent-disabled: #262A32;
+}
+
+/* Именованные текстовые стили — назначение см. ../tokens.md → «Как это применяется» */
+.text-headline-large { font-family: var(--font-family-heading); font-size: var(--font-size-headline-large); line-height: var(--line-height-headline-large); font-weight: var(--font-weight-heading); }
+.text-headline-medium { font-family: var(--font-family-heading); font-size: var(--font-size-headline-medium); line-height: var(--line-height-headline-medium); font-weight: var(--font-weight-heading); }
+.text-headline-small { font-family: var(--font-family-heading); font-size: var(--font-size-headline-small); line-height: var(--line-height-headline-small); font-weight: var(--font-weight-heading); }
+
+.text-title-medium { font-family: var(--font-family-heading); font-size: var(--font-size-title-medium); line-height: var(--line-height-title-medium); font-weight: var(--font-weight-accent); }
+.text-title-small { font-family: var(--font-family-heading); font-size: var(--font-size-title-small); line-height: var(--line-height-title-small); font-weight: var(--font-weight-accent); }
+
+.text-body-medium-light { font-family: var(--font-family-body); font-size: var(--font-size-body-medium); line-height: var(--line-height-body-medium); font-weight: var(--font-weight-text); }
+.text-body-medium-hard { font-family: var(--font-family-body); font-size: var(--font-size-body-medium); line-height: var(--line-height-body-medium); font-weight: var(--font-weight-accent); }
+.text-body-small-light { font-family: var(--font-family-body); font-size: var(--font-size-body-small); line-height: var(--line-height-body-small); font-weight: var(--font-weight-text); }
+.text-body-small-hard { font-family: var(--font-family-body); font-size: var(--font-size-body-small); line-height: var(--line-height-body-small); font-weight: var(--font-weight-accent); }
+
+.text-label-medium-light { font-family: var(--font-family-body); font-size: var(--font-size-label-medium); line-height: var(--line-height-label-medium); font-weight: var(--font-weight-text); }
+.text-label-medium-hard { font-family: var(--font-family-body); font-size: var(--font-size-label-medium); line-height: var(--line-height-label-medium); font-weight: var(--font-weight-accent); }
+.text-label-small-light { font-family: var(--font-family-body); font-size: var(--font-size-label-small); line-height: var(--line-height-label-small); font-weight: var(--font-weight-text); }
+.text-label-small-hard { font-family: var(--font-family-body); font-size: var(--font-size-label-small); line-height: var(--line-height-label-small); font-weight: var(--font-weight-accent); }
